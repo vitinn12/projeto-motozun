@@ -1,0 +1,174 @@
+:root{
+    --amarelo:#DFAD3E;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Cabeçalho */
+header{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+header .logo img {
+    width: 200px;
+    height: 50px;
+    object-fit: contain;
+}
+header .categorias a, header .login_registro a{
+    margin-left: 40px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+header .categorias a:hover, header .login_registro a:hover{
+    transform: scale(1.1);
+}
+header .categorias{
+    display: flex;
+
+}
+header .login_registro{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    
+}
+header .login_registro .btn_registrar {
+    background-color: var(--amarelo);
+    width: 120px;
+    height: 35px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+header .login_registro .btn_registrar:hover{
+    transition: 1s all;
+    transform: scale(1.1);
+}
+/* Fim do cabeçalho */
+
+/* começo do comp1 */
+
+.comp1{
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.comp1 svg {
+    display: flex;
+    width: 1200px;
+    height: 600px;
+    z-index: 1;
+    position: absolute;
+}
+.comp1 section{
+    z-index: 2;
+    width: 80%;
+    height: 400px;
+    display: flex;
+    justify-content: space-evenly;
+    /* clip-path: polygon(0 0, calc(100% - 400px) 0, 100% 200px, 100% 100%, 0 100%); */
+    
+}
+.comp1 section .imagem_comp1 {
+    width: 300px;
+    height: 450px;
+    border-radius: 10px;
+    position: relative;
+    left: 100px;
+}
+.comp1 section .texto_comp1 {
+    width: 30%;
+    height: 400px;
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+}
+
+.texto_comp1 h1{
+    color: #ffffff;
+    font-size: 2rem;
+}
+.texto_comp1 p{
+    color: white;
+    font-size: 1.2rem;
+}
+
+/* fim do comp1 */
+
+/* começo do comp2 */
+.comp2{
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    height: 900px;
+}
+.comp2 section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    width: 90%;
+    height: 500px;
+    background-color: black;
+}
+.texto_comp2{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    color: white;
+    height: 350px;
+    width: 30%;
+}
+
+.texto_comp2 h1{
+    color: #ffffff;
+    font-size: 2rem;
+}
+.texto_comp2 p{
+    color: white;
+    font-size: 1.2rem;
+}
+
+.texto_comp2 a{
+    color: black;
+    text-decoration: none;
+    background-color: #fff;
+    width: 130px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.comp2 section .imagem{
+    background-color: #fff;
+    border-radius: 10px;
+}
+.comp2 section .imagem img {
+    width: 250px;
+    height: 300px;
+    object-fit: contain;
+}
+
+/* fim do comp2 */
+
+/* começo do comp3 */
+
+
+/* fim do comp3 */
