@@ -1,5 +1,6 @@
 :root{
     --amarelo:#DFAD3E;
+    --preto_mododark:#031626;
 }
 
 *{
@@ -69,14 +70,14 @@ header .login_registro .btn_registrar:hover{
 }
 .comp1 svg {
     display: flex;
-    width: 1200px;
+    width: 100%;
     height: 600px;
     z-index: 1;
     position: absolute;
 }
 .comp1 section{
     z-index: 2;
-    width: 80%;
+    width: 70%;
     height: 400px;
     display: flex;
     justify-content: space-evenly;
@@ -111,19 +112,34 @@ header .login_registro .btn_registrar:hover{
 
 /* começo do comp2 */
 .comp2{
-    display: flex ;
+    display: flex;
     justify-content: center;
     align-items: center;
     height: 900px;
+
+}
+.comp2 .card-comp2 {
+    width: 400px;
+    height: 500px;
+    background-color: var(--amarelo);
+    border-radius: 30px;
+    position: relative;
+    left: 130px;
+    top: 100px;
+
+    
 }
 .comp2 section {
+    z-index: 2;
     display: flex;
     justify-content: space-around;
     align-items: center;
     border-radius: 10px;
-    width: 90%;
+    width: 80%;
     height: 500px;
     background-color: black;
+    position: relative;
+    right: 200px;
 }
 .texto_comp2{
     display: flex;
@@ -170,7 +186,47 @@ header .login_registro .btn_registrar:hover{
 
 /* fim do comp2 */
 
-/* começo do comp3 */
+/* começo do beneficios */
+#beneficios{
+    display: 100%;
+    background-color: var(--amarelo);
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#beneficios .texto_beneficios{
+ height: 150px;
+ display: flex;
+ align-items: center;
+}
+
+#beneficios section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 60%;
+    gap: 50px;
+}
+
+#beneficios section .card {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 350px;
+    height: 200px;
+    border-radius: 30px;
+    padding: 17px;
+    color: white;
+}
 
 
-/* fim do comp3 */
+/* fim do beneficios*/
+
+/* inicio do footer */
+footer{
+    height: 1000px;
+}
+/* final do footer */
