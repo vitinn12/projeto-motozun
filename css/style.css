@@ -1,6 +1,5 @@
 :root{
     --amarelo:#DFAD3E;
-    --preto_mododark:#031626;
 }
 
 *{
@@ -229,7 +228,7 @@ header .login_registro .btn_registrar:hover{
 
 /* inicio do footer */
 footer{
-    height: 900px;
+    height: 700px;
     display: flex;
     flex-direction: column;
     justify-content: end;
