@@ -1,317 +1,556 @@
-:root{
-    --amarelo:#DFAD3E;
+:root {
+  --amarelo: #dfad3e;
 }
 
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-html{
-    scroll-behavior: smooth;
-    background-color: #fafdff;
+html {
+  scroll-behavior: smooth;
+  background-color: #fafdff;
 }
 
 /* Cabeçalho */
-header{
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+header {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 header .logo img {
-    width: 200px;
-    height: 50px;
-    object-fit: contain;
+  width: 200px;
+  height: 50px;
 }
-header .categorias a, header .login_registro a{
-    margin-left: 40px;
-    font-weight: bold;
-    text-decoration: none;
-    color: black;
-    cursor: pointer;
+header .categorias a,
+header .login_registro a {
+  margin-left: 40px;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}   
+header .categorias a:hover,
+header .login_registro a:hover {
+  transform: scale(1.1);
 }
-header .categorias a:hover, header .login_registro a:hover{
-    transform: scale(1.1);
+header .categorias {
+  display: flex;
 }
-header .categorias{
-    display: flex;
-
-}
-header .login_registro{
-    display: flex;
-    align-items: center;
-    justify-content: end;
-    
+header .login_registro {
+  display: flex;
+  align-items: center;
+  justify-content: end;
 }
 header .login_registro .btn_registrar {
-    background-color: var(--amarelo);
-    width: 120px;
-    height: 35px;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px;
+  background-color: var(--amarelo);
+  width: 120px;
+  height: 35px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
 }
-header .login_registro .btn_registrar:hover{
-    transition: 1s all;
-    transform: scale(1.1);
+header .login_registro .btn_registrar:hover {
+  transition: 1s all;
+  transform: scale(1.1);
 }
 /* Fim do cabeçalho */
-
-/* começo do comp1 */
-
-.comp1{
-    height: 650px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+/* Barra de navegação (mobile) */
+nav {
+    display: none;
+    justify-content:center;
 }
-.comp1 svg {
-    display: flex;
+nav .categorias{
     width: 100%;
-    height: 600px;
-    z-index: 1;
-    position: absolute;
-}
-.comp1 section{
-    z-index: 2;
-    width: 70%;
-    height: 400px;
     display: flex;
     justify-content: space-evenly;
-    /* clip-path: polygon(0 0, calc(100% - 400px) 0, 100% 200px, 100% 100%, 0 100%); */
-    
+}
+nav .categorias a:hover{
+  transform: scale(1.1);
+}
+nav .categorias a{
+  margin-left: 40px;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}  
+
+/* fim da barra de navegação */
+/* começo do comp1 */
+
+.comp1 {
+  height: 650px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.comp1 svg {
+  display: flex;
+  width: 80%;
+  z-index: 1;
+  position: absolute;
+}
+.comp1 section {
+  z-index: 2;
+  width: 70%;
+  display: flex;
+  justify-content: space-evenly;
+  /* clip-path: polygon(0 0, calc(100% - 400px) 0, 100% 200px, 100% 100%, 0 100%); */
 }
 .comp1 section .imagem_comp1 {
-    width: 300px;
-    height: 450px;
-    border-radius: 10px;
-    position: relative;
-    left: 100px;
+  width: 300px;
+  height: 450px;
+  border-radius: 10px;
+  position: relative;
+  left: 100px;
 }
 .comp1 section .texto_comp1 {
-    width: 30%;
-    height: 400px;
-    display: flex;
-    flex-direction: column ;
-    justify-content: center;
+  width: 30%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.texto_comp1 h1{
-    color: #ffffff;
-    font-size: 2rem;
+.texto_comp1 h1 {
+  color: #ffffff;
+  font-size: 2rem;
 }
-.texto_comp1 p{
-    color: white;
-    font-size: 1.2rem;
+.texto_comp1 p {
+  color: white;
+  font-size: 1.2rem;
 }
 
 /* fim do comp1 */
 
 /* começo do comp2 */
-.comp2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 900px;
-
+.comp2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 900px;
 }
 .comp2 .card-comp2 {
-    width: 400px;
-    height: 500px;
-    background-color: var(--amarelo);
-    border-radius: 30px;
-    position: relative;
-    left: 130px;
-    top: 100px;
-
-    
+  width: 400px;
+  height: 500px;
+  background-color: var(--amarelo);
+  border-radius: 30px;
+  position: relative;
+  left: 130px;
+  top: 100px;
 }
 .comp2 section {
-    z-index: 2;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    border-radius: 10px;
-    width: 80%;
-    height: 500px;
-    background-color: black;
-    position: relative;
-    right: 200px;
+  z-index: 2;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10px;
+  width: 80%;
+  height: 500px;
+  background-color: black;
+  position: relative;
+  right: 200px;
 }
-.texto_comp2{
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    color: white;
-    height: 350px;
-    width: 30%;
-}
-
-.texto_comp2 h1{
-    color: #ffffff;
-    font-size: 2rem;
-}
-.texto_comp2 p{
-    color: white;
-    font-size: 1.2rem;
+.texto_comp2 {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  color: white;
+  height: 350px;
+  width: 30%;
 }
 
-.texto_comp2 a{
-    color: black;
-    text-decoration: none;
-    background-color: #fff;
-    width: 130px;
-    height: 40px;
-    border-radius: 10px;
-    font-size: 1rem;
-    font-weight: bold;
-    margin-top: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
+.texto_comp2 h1 {
+  color: #ffffff;
+  font-size: 2rem;
 }
-.comp2 section .imagem{
-    background-color: #fff;
-    border-radius: 10px;
+.texto_comp2 p {
+  color: white;
+  font-size: 1.2rem;
+}
+
+.texto_comp2 a {
+  color: black;
+  text-decoration: none;
+  background-color: #fff;
+  width: 130px;
+  height: 40px;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.comp2 section .imagem {
+  background-color: #fff;
+  border-radius: 10px;
 }
 .comp2 section .imagem img {
-    width: 250px;
-    height: 300px;
-    object-fit: contain;
+  width: 250px;
+  height: 300px;
+  object-fit: contain;
 }
 
 /* fim do comp2 */
 
 /* começo do beneficios */
-#beneficios{
-    display: 100%;
-    background-color: var(--amarelo);
-    height: 500px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+#beneficios {
+  display: 100%;
+  background-color: var(--amarelo);
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-#beneficios .texto_beneficios{
- height: 150px;
- display: flex;
- align-items: center;
+#beneficios .texto_beneficios {
+  height: 150px;
+  display: flex;
+  align-items: center;
 }
 
 #beneficios section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 80%;
-    height: 60%;
-    gap: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 60%;
+  gap: 50px;
 }
 
 #beneficios section .card {
-    background-color: black;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    width: 350px;
-    height: 200px;
-    border-radius: 30px;
-    padding: 17px;
-    color: white;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 30%;
+  height: 200px;
+  border-radius: 30px;
+  padding: 17px;
+  color: white;
 }
-
 
 /* fim do beneficios*/
 
 /* inicio do footer */
-footer{
-    height: 700px;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
+footer {
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
 }
-footer section{
-    width: 100%;
-    height: 500px;
-    background-color: #F2F2F2;
-    border-radius: 80px 80px 0 0;
-    padding: 20px;
+footer section {
+  width: 100%;
+  height: 500px;
+  background-color: #f2f2f2;
+  border-radius: 80px 80px 0 0;
+  padding: 20px;
 }
 footer section img {
-    width: 200px;
-    margin-left: 150px;
-    margin-top: 20px;
+  width: 200px;
+  margin-left: 120px;
+  margin-top: 20px;
 }
-.texto-contato{
+.texto-contato {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 300px;
+}
+.container-texto {
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    height: 300px;
-
+    gap: 40px;
 }
 .texto-contato .texto {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
-.texto-contato .texto p{
-    display: flex;
-    flex-direction: column;
-    gap: 7px;
+.texto-contato .texto p {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
 }
 .texto-contato .texto p a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
-.card-contato{
-    background-color: black;
-    border-radius: 30px;
-    width: 499px;
-    height: 200px;
-    padding: 20px;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+.card-contato {
+  background-color: black;
+  border-radius: 30px;
+  width: 499px;
+  height: 200px;
+  padding: 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
-.card-contato article{
-    margin-top: 20px;
-    display: flex;
-    gap: 20px;
-
+.card-contato article {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
 }
-.card-contato article p{
-    width: 50%;
+.card-contato article p {
+  width: 50%;
 }
 
 /* icons */
 
-.texto-icons{
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    height: 100px;
-    margin-right: 100px;
-    gap: 50px;
+.texto-icons {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  height: 100px;
+  margin-right: 100px;
+  gap: 50px;
 }
-.texto-icons .icons{
-    display: flex;
-    gap: 15px;
-    font-size: 20px;
+.texto-icons .icons {
+  display: flex;
+  gap: 15px;
+  font-size: 20px;
 }
-.texto-icons .icons a{
-    color: black;
+.texto-icons .icons a {
+  color: black;
 }
-.texto-icons .icons a:hover{
-    color: #031626;
-    transform: scale(1.2);
-    transition: 0.4s;
+.texto-icons .icons a:hover {
+  color: #031626;
+  transform: scale(1.2);
+  transition: 0.4s;
 }
 
 /* fim do icons */
 
-
 /* final do footer */
+
+/* Responsividade */
+
+@media screen and (max-width: 1000px) {
+  .comp1 section .imagem_comp1 {
+    width: 260px;
+    height: 400px;
+  }
+  .card-comp2{
+    display: none;
+  }
+  .comp2 section{
+    right: 0;
+  }
+  #beneficios .card {
+    font-size: 14px;
+  }
+  footer section img {
+    margin-left: 25px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+    header .categorias{
+        display: none;
+    }
+    nav{
+        display: flex;
+    }
+    .comp1 section{
+        height: 300px;
+    }
+    .comp1 section .imagem_comp1 {
+        width: 200px;
+        height: 300px;
+      }
+      .comp1 section .texto_comp1 {
+        height: 300px;
+      }
+      .comp1 section .texto_comp1 h1{
+        font-size: 22px;
+      }
+      .comp1 section .texto_comp1 p{
+        font-size: 15px;
+      }
+      .comp2 section .imagem{
+        width: 30%;
+        height: 35%;
+      }
+      .comp2 section .imagem img{
+        width: 100%;
+        height: 100%;
+      }
+      .texto_comp2 {
+        gap: 0;
+      }
+      .texto_comp2 h1 {
+        font-size: 24px;
+      }
+      .texto_comp2 p{
+        font-size: 17px;
+      }
+      #beneficios .card {
+        font-size: 13px;
+      }
+      footer {
+        height: 700px;
+        justify-content: end;
+      }
+      footer section {
+        height: 600px;
+      }
+      footer section .texto-contato {
+        flex-direction: column;
+        justify-content: center;
+        gap: 40px;
+        height: 400px;
+      }
+      footer section .card-contato{
+        width: 80%;
+      }
+}
+@media screen and (max-width: 760px) {
+  .comp1 svg {
+    width: 90%;
+  }
+  .comp1{
+    height: 500px;
+  }
+  #beneficios {
+    height: 400px;
+  }
+  #beneficios section{
+    height: 200px;
+  }
+  #beneficios .texto_beneficios h1{
+    font-size: 22px;
+  }
+  #beneficios section .card {
+    font-size: 12px;
+    height:250px;
+  }
+
+}
+@media screen and (max-width: 650px){
+  header .login_registro {
+    font-size: 14px;
+  }
+  nav .categorias{
+     font-size: 14px;
+  }
+  .comp1 {
+    height: 400px;
+    width: 100%; 
+  }
+  .comp1 section{
+    width: 50%;
+    align-items: center;
+  }
+  .comp1 section .imagem_comp1 {
+    width: 60%;
+    height: 80%;
+  }
+  .comp1 section .texto_comp1 {
+    height: 50%;
+    width: 50%;
+  }
+  .comp2{
+    height: 500px;
+  }
+  .comp2 section{
+    height: 400px;
+    
+  }
+  .comp2 .texto_comp2 {
+    width: 40%;
+    height:80%;
+    justify-content: center;
+  }
+  .comp2 .texto_comp2 h1{
+    font-size: 20px;
+  }
+  .comp2 .texto_comp2 p {
+      font-size: 15px;
+  }
+  #beneficios {
+    height: 600px;
+    gap: 100px;
+  }
+  #beneficios section {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  #beneficios section .card {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 600px){
+  .comp1 section {
+    margin-right: 70px;
+  }
+  .comp1 section .texto_comp1 h1{
+    font-size: 18px;
+  }
+  .comp1 section .texto_comp1 p{
+    font-size: 13px;
+  }
+
+}
+@media screen and (max-width: 500px){
+  header{
+    justify-content: space-evenly;
+  }
+  header .logo img {
+    width: 150px;
+    height: 40px;
+  }
+  header .login_registro, nav .categorias {
+    font-size: 12px;
+  }
+  header .login_registro .btn_registrar{
+    width: 100px;
+    height: 30px;
+  }  
+  
+  .comp1 section .imagem_comp1 {
+    width: 140px;
+    height: 200px;
+  }
+  footer section .texto-contato .card-contato {
+    gap: 0;
+    font-size: 16px;
+    width: 70%;
+  }
+  footer section .texto-contato .card-contato article {
+    flex-direction: column;
+    gap: 10px;
+    font-size: 14px;
+  }
+
+}
+
+@media screen and (max-width: 450px){
+  header {
+    justify-content: center;
+  }
+  .comp1 {
+    height: 300px;
+  }
+  .comp2 {
+    height: 500px;
+  }
+  .comp1 section .imagem_comp1 {
+    width: 100px;
+    height: 150px;
+  }
+  .comp1 section .texto_comp1 h1{
+    font-size: 16px;
+  }
+  .comp1 section .texto_comp1 p{
+    font-size: 11px;
+  }
+
+}
+/* Fim da responsividade */
