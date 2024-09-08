@@ -54,8 +54,9 @@ header .login_registro .btn_registrar {
   border-radius: 10px;
 }
 header .login_registro .btn_registrar:hover {
-  transition: 1s all;
+  transition: 1s;
   transform: scale(1.1);
+
 }
 /* Fim do cabeçalho */
 /* Barra de navegação (mobile) */
@@ -158,6 +159,7 @@ nav .categorias a{
 .texto_comp2 {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 16px;
   color: white;
   height: 350px;
@@ -381,7 +383,7 @@ footer section img {
         height: 100%;
       }
       .texto_comp2 {
-        gap: 0;
+        gap: 5px;
       }
       .texto_comp2 h1 {
         font-size: 24px;
@@ -428,6 +430,9 @@ footer section img {
   #beneficios section .card {
     font-size: 12px;
     height:250px;
+  }
+  .texto_comp2 a{
+    margin-top: 20px;
   }
 
 }
