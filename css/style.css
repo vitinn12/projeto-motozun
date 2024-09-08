@@ -103,8 +103,8 @@ nav .categorias a{
   /* clip-path: polygon(0 0, calc(100% - 400px) 0, 100% 200px, 100% 100%, 0 100%); */
 }
 .comp1 section .imagem_comp1 {
-  width: 300px;
-  height: 450px;
+  width: 230px;
+  height: 370px;
   border-radius: 10px;
   position: relative;
   left: 100px;
@@ -333,10 +333,6 @@ footer section img {
 /* Responsividade */
 
 @media screen and (max-width: 1100px) {
-  .comp1 section .imagem_comp1 {
-    width: 260px;
-    height: 400px;
-  }
   .card-comp2{
     display: none;
   }
@@ -541,8 +537,8 @@ footer section img {
 }
 
 @media screen and (max-width: 450px){
-  header {
-    justify-content: center;
+  header .login_registro a{
+    margin-left: 19px;
   }
   .comp1 {
     height: 300px;
@@ -561,7 +557,12 @@ footer section img {
   .comp1 section .texto_comp1 p{
     font-size: 10px;
   }
-
+  .container-texto .texto h1{
+    font-size: 16px;
+  }
+  .container-texto .texto p{
+    font-size: 13px;
+  }
 
 }
 /* Fim da responsividade */
