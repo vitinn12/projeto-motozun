@@ -7,11 +7,10 @@
   margin: 0;
   box-sizing: border-box;
 }
-html {
+body {
   scroll-behavior: smooth;
   background-color: #fafdff;
 }
-
 /* Cabeçalho */
 header {
   height: 100px;
@@ -30,6 +29,7 @@ header .login_registro a {
   text-decoration: none;
   color: black;
   cursor: pointer;
+  transition: 1s all;
 }   
 header .categorias a:hover,
 header .login_registro a:hover {
@@ -538,6 +538,7 @@ footer section img {
   .comp1 {
     height: 300px;
   }
+
   .comp2 {
     height: 500px;
   }
@@ -546,11 +547,12 @@ footer section img {
     height: 150px;
   }
   .comp1 section .texto_comp1 h1{
-    font-size: 16px;
+    font-size: 14px;
   }
   .comp1 section .texto_comp1 p{
-    font-size: 11px;
+    font-size: 10px;
   }
+
 
 }
 /* Fim da responsividade */
