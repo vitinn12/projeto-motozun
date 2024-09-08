@@ -485,6 +485,10 @@ footer section img {
   #beneficios section .card {
     width: 80%;
   }
+  .texto-icons{
+    margin-right: 0;
+    justify-content: center;
+  }
 }
 @media screen and (max-width: 600px){
   .comp1 section {
