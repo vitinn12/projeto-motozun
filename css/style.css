@@ -7,7 +7,7 @@
   margin: 0;
   box-sizing: border-box;
 }
-body {
+html {
   scroll-behavior: smooth;
   background-color: #fafdff;
 }
@@ -19,8 +19,9 @@ header {
   justify-content: space-around;
 }
 header .logo img {
-  width: 250px;
-  height: 100px;
+  width: 240px;
+  height: 50px;
+  object-fit: contain;
 }
 header .categorias a,
 header .login_registro a {
@@ -84,7 +85,7 @@ nav .categorias a{
 /* começo do comp1 */
 
 .comp1 {
-  height: 650px;
+  height: 850px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -103,8 +104,8 @@ nav .categorias a{
   /* clip-path: polygon(0 0, calc(100% - 400px) 0, 100% 200px, 100% 100%, 0 100%); */
 }
 .comp1 section .imagem_comp1 {
-  width: 230px;
-  height: 370px;
+  width: 290px;
+  height: 450px;
   border-radius: 10px;
   position: relative;
   left: 100px;
@@ -537,8 +538,14 @@ footer section img {
 }
 
 @media screen and (max-width: 450px){
-  header .login_registro a{
-    margin-left: 19px;
+    header {
+        justify-content: space-between;
+    }
+    header .logo img {
+        padding-block-start: 10px;
+    }
+    header .login_registro a{
+    margin-left: 29px;
   }
   .comp1 {
     height: 300px;
