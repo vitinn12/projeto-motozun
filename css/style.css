@@ -507,6 +507,7 @@ footer section img {
 @media screen and (max-width: 550px){
   header{
     justify-content: space-evenly;
+    padding-inline-start: 15px;
   }
   header .logo img {
     width: 150px;
@@ -540,9 +541,10 @@ footer section img {
 @media screen and (max-width: 450px){
     header {
         justify-content: space-between;
+        padding-inline-end: 15px;
     }
-    header .logo img {
-        padding-block-start: 10px;
+    header .login{
+        margin-left: 20px;
     }
     header .login_registro a{
     margin-left: 29px;
