@@ -19,7 +19,7 @@ header {
   justify-content: space-around;
 }
 header .logo img {
-  width: 300px;
+  width: 250px;
   height: 100px;
 }
 header .categorias a,
