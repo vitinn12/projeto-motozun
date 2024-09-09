@@ -38,11 +38,13 @@ header .login_registro a:hover {
 }
 header .categorias {
   display: flex;
+  font-size: 1.2rem;
 }
 header .login_registro {
   display: flex;
   align-items: center;
   justify-content: end;
+  font-size: 1.2rem;
 }
 header .login_registro .btn_registrar {
   background-color: var(--amarelo);
@@ -120,11 +122,11 @@ nav .categorias a{
 
 .texto_comp1 h1 {
   color: #ffffff;
-  font-size: 2rem;
+  font-size: 2.8rem;
 }
 .texto_comp1 p {
   color: white;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 /* fim do comp1 */
