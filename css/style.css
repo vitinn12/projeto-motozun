@@ -267,7 +267,7 @@ footer section img {
 }
 .container-texto {
     display: flex;
-    gap: 40px;
+    gap: 120px;
 }
 .texto-contato .texto {
   display: flex;
@@ -566,6 +566,7 @@ footer section img {
   .comp1 section .texto_comp1 p{
     font-size: 10px;
   }
+  .container-texto {gap: 50px;}
   .container-texto .texto h1{
     font-size: 16px;
   }
