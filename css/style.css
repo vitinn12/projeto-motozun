@@ -38,13 +38,13 @@ header .login_registro a:hover {
 }
 header .categorias {
   display: flex;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 header .login_registro {
   display: flex;
   align-items: center;
   justify-content: end;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 header .login_registro .btn_registrar {
   background-color: var(--amarelo);
