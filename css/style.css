@@ -31,10 +31,15 @@ header .login_registro a {
   color: black;
   cursor: pointer;
   transition: 1s all;
-}   
+}
+header .categorias a:hover{
+  text-decoration: underline;
+  text-underline-offset: 10px;
+}
 header .categorias a:hover,
 header .login_registro a:hover {
-  transform: scale(1.1);
+  transform: scale(1.02);
+  transition: 1s all;
 }
 header .categorias {
   display: flex;
@@ -195,7 +200,15 @@ nav .categorias a{
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: 0.5s all;
 }
+.texto_comp2 a:hover,
+.comp2 section .imagem img:hover,
+.comp2 section .imagem:hover{
+  transition: 0.5s all;
+  transform: scale(1.06);
+}
+
 .comp2 section .imagem {
   background-color: #fff;
   border-radius: 10px;
@@ -204,6 +217,7 @@ nav .categorias a{
   width: 250px;
   height: 300px;
   object-fit: contain;
+  transition: 0.5s all;
 }
 
 /* fim do comp2 */
@@ -237,11 +251,16 @@ nav .categorias a{
   display: flex;
   flex-direction: column;
   gap: 20px;
-  width: 30%;
+  width: 25%;
   height: 200px;
   border-radius: 30px;
   padding: 17px;
   color: white;
+  transition: 0.5s all;
+}
+#beneficios section .card:hover{
+  transition: 0.5s all;
+  transform: scale(1.05);
 }
 
 /* fim do beneficios*/
