@@ -59,7 +59,11 @@ header .login_registro .btn_registrar:hover {
   transform: scale(1.1);
 
 }
+
+
 /* Fim do cabeçalho */
+
+
 /* Barra de navegação (mobile) */
 nav {
     display: none;
@@ -85,7 +89,7 @@ nav .categorias a{
 /* começo do comp1 */
 
 .comp1 {
-  height: 850px;
+  height: 1050px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -330,6 +334,35 @@ footer section img {
 /* fim do icons */
 
 /* final do footer */
+
+/* Botao voltar ao topo */
+
+#voltar-ao-topo{
+  position: fixed;
+  bottom: 30px;
+  right: 10px;
+  padding: 10px 15px;
+  background-color: black;
+  color: #fafdff;
+  border-radius: 10px;
+  cursor: pointer;
+  opacity: 0; 
+  visibility: hidden; 
+  transition: opacity 0.5s ease, visibility 0.5s ease; 
+}
+#voltar-ao-topo.show {
+  opacity: 1; 
+  visibility: visible;
+}
+#voltar-ao-topo:hover{
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+
+
+/* fim do botao voltar ao topo */
+
 
 /* Responsividade */
 

@@ -22,4 +22,33 @@ revelar.reveal('.card-contato',{
 });
 
 
+// voltar ao topo
+
+// botao = window.getElementById('voltar-ao-topo')
+// function voltaraoTopo(){
+
+//     window.scrollTo(0,0);
+    
+// }
+
+function voltaraoTopo() {
+    window.scrollTo({ 
+        top: 0
+    });
+}
+
+function mostrarBotao() {
+    const botao = document.getElementById('voltar-ao-topo');
+    if (window.scrollY > 300) {
+        botao.classList.add('show');
+    } else {
+        botao.classList.remove('show');
+    }
+}
+
+window.addEventListener('scroll', mostrarBotao);
+
+
+
+
 
